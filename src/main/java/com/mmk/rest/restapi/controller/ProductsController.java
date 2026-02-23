@@ -36,7 +36,7 @@ public class ProductsController {
 
     @GetMapping("/paged")
     public Page<Product> getPages(@RequestParam(defaultValue = "0") int page,
-                                  @RequestParam(defaultValue = "10") int size) {
+                                  @RequestParam(defaultValue = "5") int size) {
         return productsService.getPagedProducts(page, size);
     }
 

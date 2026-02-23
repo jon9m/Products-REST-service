@@ -47,7 +47,7 @@ public class ProductsService {
                     .build();
 
             return productRepository.save(productToSave);
-        }).orElseThrow(() -> new RuntimeException("Product not found with id to update {}" + id));
+        }).orElseThrow(() -> new RuntimeException("Product not found with id to update {} " + id));
 
     }
 
@@ -55,7 +55,7 @@ public class ProductsService {
         return productRepository.findById(Integer.valueOf(id)).map(existing -> {
             productRepository.delete(existing);
             return existing;
-        }).orElseThrow(() -> new RuntimeException("Product not found with id to delete {}" + id));
+        }).orElseThrow(() -> new RuntimeException("Product not found with id to delete {} " + id));
     }
 
     public Page<Product> getPagedProducts(int page, int size) {
