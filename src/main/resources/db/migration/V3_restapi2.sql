@@ -1,0 +1,12 @@
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('iphone15',100);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('pixel8',101);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('galaxy24',102);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('oneplus12',103);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('AMD Ryzen 9950x3d',250);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('AMD Ryzen 9950x3d',250);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('AMD Ryzen 9950x3d',250);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('PRIME-RX9070XT-O16G',20);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('ROG STRIX B850-E GAMING WIFI',10);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('Thermalright Pahnotm spirit 120',300);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('Thermalright Pahnotm spirit 120',300);
+INSERT INTO products (`id`,`name`,`quantity`) VALUES ('ROG-STRIX-1000P-GAMING PSU',30);
