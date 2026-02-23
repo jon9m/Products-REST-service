@@ -4,6 +4,7 @@ import com.mmk.rest.restapi.model.Product;
 import com.mmk.rest.restapi.service.ProductsService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Size;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +32,12 @@ public class ProductsController {
     @GetMapping
     public List<Product> getAll() {
         return productsService.getAllProducts();
+    }
+
+    @GetMapping("/paged")
+    public Page<Product> getPages(@RequestParam(defaultValue = "0") int page,
+                                  @RequestParam(defaultValue = "10") int size) {
+        return productsService.getPagedProducts(page, size);
     }
 
     @GetMapping("/search")
